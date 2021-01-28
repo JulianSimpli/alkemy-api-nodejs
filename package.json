@@ -1,0 +1,25 @@
+{
+  "name": "alkemy-api-nodejs",
+  "version": "1.0.0",
+  "description": "Alkemy JS Challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulianSimpli/alkemy-api-nodejs.git"
+  },
+  "author": "Julian Simplituca",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulianSimpli/alkemy-api-nodejs/issues"
+  },
+  "homepage": "https://github.com/JulianSimpli/alkemy-api-nodejs#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
