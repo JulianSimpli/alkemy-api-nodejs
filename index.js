@@ -2,6 +2,9 @@ const express = require('express');
 const routes = require('./routes');
 const bodyParser = require('body-parser');
 const db = require('./config/db');
+const cors = require('cors');
+
+// server create
 const app = express();
 
 // parse requests of content-type - application/json
@@ -9,6 +12,8 @@ app.use(bodyParser.json());
 
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use(cors());
 
 require('./models/transactionModel');
 db.sync()
